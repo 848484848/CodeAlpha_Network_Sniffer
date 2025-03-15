@@ -1,35 +1,42 @@
-# CodeAlpha_Network_Sniffer
+# CodeAlpha_Network_Sniffer_TASK-1
 
-Overview
-This repository contains the code for a basic Command Line Interface (CLI) Packet Sniffer developed during my Task 1 of my cybersecuirty CodeAlpha internship .
+# Overview  
+This repository contains the code for a simple yet effective Command Line Interface (CLI) Network Packet Analyzer, developed as part of Task 1 during my cybersecurity internship at CodeAlpha. The tool provides a streamlined way to inspect network traffic in real-time.  
 
-image
+# Requirements 
+- Python 3.x  
+- Root/Administrator Privileges  
+- Linux Operating System  
+- Typer 0.9.0  
 
-Requirements
-Python 3.x
-Privileged/Administrative Rights
-Linux Operating System
-Typer 0.9.0
-Features
-Capture Packets
-Display Packet Information ( IPv6 / TCP / UDP / ICMP )
-Extract HTTP raw data
-Usage
-Clone the repository to your local machine.
+# Features  
+✔ Capture and analyze network packets  
+✔ Display detailed packet information (IPv6, TCP, UDP, ICMP)  
+✔ Extract HTTP request data  
+✔ Lightweight and easy to use  
 
-Two available commands :
+# Usage
+Clone the repository to your local machine and execute the following commands:  
 
-netsniff : It captures and displays network packets on the terminal.
+# Packet Sniffing Mode: 
+Captures live network traffic and displays packet details in real-time.  
 
-sudo python main.py netsniff
+```bash
+sudo python main.py sniffpackets
+```
 
-httplsnr : It listens for incoming HTTP requests and logs them.
+# HTTP Listener Mode:  
+Monitors and logs incoming HTTP requests.  
 
-sudo python main.py httplsnr
+```bash
+sudo python main.py httpmonitor
+```
 
-Links
-https://typer.tiangolo.com/
-https://www.youtube.com/watch?v=WGJC5vT5YJo&list=PL6gx4Cwl9DGDdduy0IPDDHYnUx66Vc4ed&index=1
-https://systemweakness.com/creating-an-advanced-network-packet-sniffer-in-python-a-step-by-step-guide-9fe51e781c64
-Contributing
-If you find any issues or have suggestions for improvement, feel free to open an issue or submit a pull request. Your contributions are highly appreciated!
+# Useful Resources
+- [Typer Documentation](https://typer.tiangolo.com/)  
+- [Python Network Programming Guide](https://www.youtube.com/watch?v=WGJC5vT5YJo&list=PL6gx4Cwl9DGDdduy0IPDDHYnUx66Vc4ed&index=1)  
+- [Advanced Packet Sniffer in Python](https://systemweakness.com/creating-an-advanced-network-packet-sniffer-in-python-a-step-by-step-guide-9fe51e781c64)  
+
+# Contributing
+If you encounter any bugs or have ideas for enhancements, feel free to open an issue or submit a pull request. Your contributions are always welcome!  
+
